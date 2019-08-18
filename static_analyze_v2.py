@@ -26,7 +26,7 @@ class StaticAnalyzer:
         self.path = path
 
     @staticmethod
-    def clone_github_repo_to_path(self, url):
+    def clone_github_repo_to_path(url):
         """ clone git url to path with subprocess """
         status_code = subprocess.call(['git', 'clone', url])
         return status_code
